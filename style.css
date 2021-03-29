@@ -5,3 +5,8 @@
 .selected{
     background-color: rgb(11, 137, 221);
 }
+
+.col-sm-2{
+    background-color: gray;
+    text-align: center;
+}
