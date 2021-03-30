@@ -3,11 +3,17 @@
     text-align: center;
     /* cursor: auto; */
 }
-
+.col:hover{
+    background-color: rgb(11, 137, 221);
+    cursor: pointer;
+}
 .selected{
     background-color: rgb(11, 137, 221);
 }
-
+#command-area:hover{
+    background-color: rgb(255, 255, 255);
+    cursor: auto;
+}
 .col-sm-2{
     background-color: gray;
     text-align: center;
