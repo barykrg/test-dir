@@ -1,37 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recommendation Engine</title>
+    
+    <title>Intel® OpenVINO™ integration with TensorFlow</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
     <!-- <script src="https://kit.fontawesome.com/e9fe64f610.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="container text-center">
-        <h1 class="bg-light py-4 text-info"> OpenVino TensorFlow</h1>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4"><img class="img-fluid" src="./openvino.png" alt="OpenVino/Tensorflow"></h1>
+      <p class="lead">Intel® OpenVINO™ integration with TensorFlow</p>
     </div>
+  </div>
 
-
+<div class="container">
+  <div class="row">
+    <p> Intel® OpenVINO™ integration with TensorFlow, is a product needed to enable Intel® OpenVINO™ runtime and optimizations for TensorFlow. Intel® OpenVINO™ integration with TensorFlow enables acceleration of AI inferencing across almost all imaginable use cases, using a variety of AI models, on a variety of Intel silicon such as Intel CPUs, Intel integrated GPUs and Intel® MovidiusTM Vision Processing Units (VPUs) and Intel® Vision accelerator Design with 8 Intel MovidiusTM MyriadX VPUs - referred as VAD-M or HDDL.</p>
+  </div>
+</div>
  <!-- Table -->
- <div class="container">
+ 
+ <div class="container ml-0">
+   <div class="row">
+    <div class="col-sm-2 title-block" style="border-radius: 20px 20px 0px 0px;">
+      Installation Table
+     </div>
+   </div>
     <div class="row ">
         <div class="col-sm-2 title-block">
          BYO
         </div>
-        <div class="col title-block" id="option-byo-none">
+        <div class="col-sm title-block" id="option-byo-none">
           None
         </div>
-        <div class="col title-block" id="option-byo-tensorflow">
+        <div class="col-sm title-block" id="option-byo-tensorflow">
           TensorFlow
         </div>
-        <div class="col title-block" id="option-byo-openvino">
+        <div class="col-sm title-block" id="option-byo-openvino">
             OpenVino
           </div>
-        <div class="col title-block" id="option-byo-tfov">
+        <div class="col-sm title-block" id="option-byo-tfov">
         TensorFlow & OpenVino
         </div>
       </div>
@@ -40,13 +51,13 @@
         <div class="col-sm-2 title-block">
          Operating System
         </div>
-        <div class="col title-block" id="option-os-linux">
+        <div class="col-sm title-block" id="option-os-linux">
           Linux
         </div>
-        <div class="col title-block" id="option-os-windows">
+        <div class="col-sm title-block" id="option-os-windows">
           Windows
         </div>
-        <div class="col title-block" id="option-os-mac">
+        <div class="col-sm title-block" id="option-os-mac">
            Mac OS
           </div>
       </div>
@@ -55,10 +66,10 @@
         <div class="col-sm-2 title-block">
          Distro
         </div>
-        <div class="col title-block" id="option-distro-pip">
+        <div class="col-sm title-block" id="option-distro-pip">
           Pip
         </div>
-        <div class="col title-block" id="option-distro-source">
+        <div class="col-sm title-block" id="option-distro-source">
           Source
         </div>
       </div>
@@ -67,10 +78,10 @@
         <div class="col-sm-2 title-block">
          HDDL
         </div>
-        <div class="col title-block" id="option-hddl-yes">
+        <div class="col-sm title-block" id="option-hddl-yes">
           Yes
         </div>
-        <div class="col title-block" id="option-hddl-no">
+        <div class="col-sm title-block" id="option-hddl-no">
           No
         </div>
       </div>
@@ -79,13 +90,16 @@
         <div class="col-sm-2 title-block">
             Run this command:
         </div>
-        <div class="col title-block" id="command-area">
+        <div class="col-sm title-block" id="command-area">
             Not Supported / Choose Features
         </div>
       </div>
 
       
  </div>
+
+ <!-- Psuedo Table -->
+ 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>

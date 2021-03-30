@@ -1,20 +1,43 @@
 .title-block{
-    border: 2px solid rgb(76, 64, 90);
+    border: 2px solid rgb(255, 255, 255);
     text-align: center;
+    font-weight: 500;
+    font-size: larger;
+    background-color: rgb(212, 212, 212);
+    padding-top: 10px;
+    min-height: 60px;
     /* cursor: auto; */
 }
-.col:hover{
-    background-color: rgb(11, 137, 221);
+.lead{
+    font-weight: bolder;
+}
+
+.display-4{
+    padding-top: 10px;
+}
+.jumbotron{
+    background-color:rgb(119, 172, 241);
+    border-bottom: solid;
+}
+.container{
+    font-size: medium;
+    font-weight: 400;
+}
+.row{
+    display: flex;
+}
+.col-sm:hover{
+    background-color: rgb(182, 181, 181);
     cursor: pointer;
 }
 .selected{
-    background-color: rgb(11, 137, 221);
+    background-color: #6C24F4;
 }
 #command-area:hover{
-    background-color: rgb(255, 255, 255);
+    background-color:  rgb(212, 212, 212);
     cursor: auto;
 }
 .col-sm-2{
-    background-color: gray;
+    background-color: rgb(119, 172, 241);
     text-align: center;
 }
