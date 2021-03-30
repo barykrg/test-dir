@@ -1,5 +1,7 @@
 .title-block{
     border: 2px solid rgb(76, 64, 90);
+    text-align: center;
+    /* cursor: auto; */
 }
 
 .selected{
@@ -10,3 +12,7 @@
     background-color: gray;
     text-align: center;
 }
+
+/* .container{
+    margin:5em 10em;
+} */
