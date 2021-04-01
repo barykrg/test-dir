@@ -27,8 +27,9 @@
     display: flex;
 }
 .col-sm:hover{
-    background-color: rgb(182, 181, 181);
+    /* background-color: rgb(182, 181, 181); */
     cursor: pointer;
+    border: 2px solid rgb(24, 1, 1);
 }
 .selected{
     background-color: #6C24F4;
