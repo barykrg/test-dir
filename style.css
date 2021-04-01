@@ -36,6 +36,7 @@
 }
 #command-area:hover{
     background-color:  rgb(212, 212, 212);
+    border: 2px solid rgb(255, 255, 255);
     cursor: auto;
 }
 .col-sm-2{
