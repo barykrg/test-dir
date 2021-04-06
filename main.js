@@ -118,7 +118,20 @@ function commandArea()
         for(let line of command.split(','))
         {
             let paragraph = document.createElement('p');
-            paragraph.innerHTML = line;
+            if(line.indexOf('Link')>=0)
+            {
+                const name = document.createTextNode(line.substr(0,line.indexOf('Link')));
+                let hyperlink = document.createElement('a');
+                hyperlink.appendChild(name);
+                console.log(line.substr(line.indexOf('Link')+5))
+                hyperlink.href = line.substr(line.indexOf('Link')+5);
+                paragraph.appendChild(hyperlink);
+            }
+            else
+            {
+                paragraph.innerHTML = line;
+            }
+            
             area.appendChild(paragraph);
         }
     }
