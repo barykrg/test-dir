@@ -67,18 +67,15 @@ function removeFromOtherRow(div)
         document.getElementById('option-byo-openvino').classList.remove('selected');
         document.getElementById('option-byo-none').classList.add('selected');
     }
-    if(div.id.startsWith('option-byo'))
+    if(document.getElementById('option-byo-tfov').classList.contains('selected'))
     {
-        if(div.id=='option-byo-tfov' && div.classList.contains('selected'))
-        {
-            document.getElementById('option-hddl-yes').classList.add('blur');
-            document.getElementById('option-hddl-no').classList.add('blur');
-        }
-        else
-        {
-            document.getElementById('option-hddl-yes').classList.remove('blur');
-            document.getElementById('option-hddl-no').classList.remove('blur');
-        }
+        document.getElementById('option-hddl-no').classList.add('blur');
+        document.getElementById('option-hddl-yes').classList.add('blur');
+    }
+    else
+    {
+        document.getElementById('option-hddl-no').classList.remove('blur');
+        document.getElementById('option-hddl-yes').classList.remove('blur');
     }
 
 }
