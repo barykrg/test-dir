@@ -105,6 +105,7 @@ function commandArea()
         area.innerHTML = `${nameOS} installation not supported`;
         return;
     }
+    
     const mapping = getByo()+getOs()+getDistro()+getHddl();
     const command = combination.get(mapping);
     console.log(mapping);
