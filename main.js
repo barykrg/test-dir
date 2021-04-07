@@ -6,13 +6,15 @@ const combination = new Map([
 ],
 ["010001","pip install openvino-tensorflow"
 ],
-["010000","Invalid Option"
-],
 ["100000","pip install https://github.com/openvinotoolkit/openvino_tensorflow/releases/tensorflow-abi1.whl , pip install https://github.com/openvinotoolkit/openvino_tensorflow/releases/openvino-tensorflow-abi1.whl , source /opt/intel/openvino_2021.3.394/bin/setupvars.sh"
 ],
-["100001","Invalid Option"
+["000010"," Download Intel® Distribution of OpenVINO™ Toolkit Link-https://software.intel.com/content/www/us/en/develop/tools/openvino-toolkit/download.html?operatingsystem=linux&distributions=webdownload&version=2021%203%20(latest)&options=offline ,python3 build_ovtf.py --use_openvino_from_location=/opt/intel/openvino_2021.3.394/"
 ],
-["110000","Invalid Option"
+["000011","python3 build_ovtf.py"
+],
+["100010","#Use OpenVINO 2021.3,python3 build_ovtf.py --use_openvino_from_location=/opt/intel/openvino_2021.3.394/"
+],
+["100011","python3 build_ovtf.py"
 ]
     ]);
 
@@ -57,26 +59,27 @@ function removeFromOtherRow(div)
         document.getElementById('option-byo-tensorflow').classList.remove('selected');
         document.getElementById('option-byo-none').classList.add('selected');
     }
-    if(div.id=='option-byo-openvino' && document.getElementById('option-hddl-no').classList.contains('selected'))
+    if(div.id=='option-byo-openvino' && document.getElementById('option-hddl-no').classList.contains('selected')&&document.getElementById('option-distro-pip').classList.contains('selected'))
     {
         document.getElementById('option-hddl-no').classList.remove('selected');
         document.getElementById('option-hddl-yes').classList.add('selected');
     }
-    if(div.id=='option-hddl-no' && document.getElementById('option-byo-openvino').classList.contains('selected'))
+    if(div.id=='option-hddl-no' && document.getElementById('option-byo-openvino').classList.contains('selected')&&document.getElementById('option-distro-pip').classList.contains('selected'))
     {
         document.getElementById('option-byo-openvino').classList.remove('selected');
         document.getElementById('option-byo-none').classList.add('selected');
     }
-    if(document.getElementById('option-byo-tfov').classList.contains('selected'))
-    {
-        document.getElementById('option-hddl-no').classList.add('blur');
-        document.getElementById('option-hddl-yes').classList.add('blur');
-    }
-    else
-    {
-        document.getElementById('option-hddl-no').classList.remove('blur');
-        document.getElementById('option-hddl-yes').classList.remove('blur');
-    }
+    // Blurr Effect when openvino/tensorflow is selected
+    // if(document.getElementById('option-byo-tfov').classList.contains('selected'))
+    // {
+    //     document.getElementById('option-hddl-no').classList.add('blur');
+    //     document.getElementById('option-hddl-yes').classList.add('blur');
+    // }
+    // else
+    // {
+    //     document.getElementById('option-hddl-no').classList.remove('blur');
+    //     document.getElementById('option-hddl-yes').classList.remove('blur');
+    // }
 
 }
 function removeSameRow(div)
@@ -108,7 +111,7 @@ function commandArea()
     console.log(mapping);
     if(!command)
     {
-        area.innerHTML = "Choose Features";
+        area.innerHTML = "Choose Features/Invalid Option";
     }
     else
     {
@@ -140,7 +143,7 @@ function getByo()
     if(document.getElementById('option-byo-none').classList.contains('selected')) return "00"; //return "00";
     if(document.getElementById('option-byo-tensorflow').classList.contains('selected')) return "01"; //return "01";
     if(document.getElementById('option-byo-openvino').classList.contains('selected')) return "10"; //return "10";
-    if(document.getElementById('option-byo-tfov').classList.contains('selected')) return "11"; //return "11";
+    // if(document.getElementById('option-byo-tfov').classList.contains('selected')) return "11"; //return "11";
     return "2";
 }
 
