@@ -72,6 +72,7 @@ function removeFromOtherRow(div)
     if(div.id=='option-distro-pip' && document.getElementById('option-byo-openvino').classList.contains('selected')&&document.getElementById('option-hddl-no').classList.contains('selected'))
     {
         document.getElementById('option-hddl-yes').classList.add('selected');
+        document.getElementById('option-hddl-no').classList.remove('selected');
     }
     // Blurr Effect when openvino/tensorflow is selected
     // if(document.getElementById('option-byo-tfov').classList.contains('selected'))
