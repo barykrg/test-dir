@@ -69,6 +69,10 @@ function removeFromOtherRow(div)
         document.getElementById('option-byo-openvino').classList.remove('selected');
         document.getElementById('option-byo-none').classList.add('selected');
     }
+    if(div.id=='option-distro-pip' && document.getElementById('option-byo-openvino').classList.contains('selected')&&document.getElementById('option-hddl-pip').classList.contains('selected'))
+    {
+        document.getElementById('option-hddl-yes').classList.add('selected');
+    }
     // Blurr Effect when openvino/tensorflow is selected
     // if(document.getElementById('option-byo-tfov').classList.contains('selected'))
     // {
