@@ -1,2 +1,3 @@
 This is a test md file
-[<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
+
+[<img src="https://github.com/barykrg/test-dir/blob/master/installationTable.PNG">](https://barykrg.github.io/test-dir)
